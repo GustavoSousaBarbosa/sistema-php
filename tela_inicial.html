@@ -11,29 +11,35 @@
 <body>
     <div class="container text-center">
         <div class="row">
-          <div class="col-sm-12 col-md-4">
-            
-          </div>
-          <div class="col-sm-12 col-md-4" style="margin-top: 10%;">
-            <i class="fa-solid fa-coins"></i>
-            <form action="php/logon.php" method="post">
+            <div class="col-sm-12 col-md-7">
+                <img class="img_cad" src="img/5928126_3009236.svg" alt="" srcset="">
+            </div> 
+          <div class="col-sm-12 col-md-5" style="margin-top: 10%;">
+             <form action="php/insert_usuario.php" method="post">
+                    <h1 id="h1_cad_user">Cadastro de Usuário</h1>
                 <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label left">Email</label>
-                  <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <label for="nome" class="form-label">Nome</label>
+                  <input type="text" class="form-control" id="nome" name="nome" aria-describedby="emailHelp">
                 </div>
                 <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Senha</label>
-                  <input type="password" name="senha" class="form-control" id="exampleInputPassword1">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="cargo" class="form-label">Cargo</label>
+                  <input type="text" class="form-control" id="cargo" name="cargo" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="senha" class="form-label">Senha</label>
+                  <input type="password" class="form-control" id="senha" name="senha">
                 </div>
             <div class="button">
-                <button type="submit" class="btn btn-success">Entrar</button>
-                <a href="cad_usuario.html" type="submit" class="btn btn-warning">Cadastrar</a>
+                <button type="submit" class="btn btn-success">Cadastrar</button>
+                <a href="index.html" type="submit" class="btn btn-warning">Voltar</a>
             </div>
               </form>
           </div>
-          <div class="col-sm-12 col-md-4">
-         
-          </div>
+       
         </div>
       </div>
 
