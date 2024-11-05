@@ -9,6 +9,18 @@
     <script src="https://kit.fontawesome.com/c0f408d1cc.js" crossorigin="anonymous"></script>
 </head>
 </body>
+<div style="">
+    <?php
+    session_start();
+    if (isset($_SESSION['id'])) {
+      $id = $_SESSION['id'];
+      echo "olá $id";
+       } else{
+        echo "<script>alert('Usuário precisar logar'); history.back();</script>";
+       }
+
+    ?>
+<div>
     <div class="container text-center text-light" style="margin: 10%; border: 10px solid; padding: 20px; margin-left: 250px;">
       <h1> Seja bem vindo ao sistema</h1>  
       <p>Escolha uma opção para lançar</p>
